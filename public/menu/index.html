@@ -39,10 +39,11 @@
         font-weight: 700;
       }
 
-      .direct-link {
+      .back-btn {
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        gap: 8px;
         padding: 10px 14px;
         border-radius: 999px;
         background: #f04f9a;
@@ -51,6 +52,12 @@
         font-size: 14px;
         font-weight: 600;
         white-space: nowrap;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+
+      .back-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(240, 79, 154, 0.4);
       }
 
       .viewer {
@@ -58,102 +65,23 @@
         margin: 16px auto 32px;
       }
 
-      .page {
+      .menu-image {
         width: 100%;
-        margin: 0 auto 16px;
         border-radius: 22px;
-        overflow: hidden;
-        background: white;
         box-shadow: 0 18px 48px rgba(142, 53, 103, 0.14);
-      }
-
-      canvas {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-
-      .status {
-        width: min(1100px, calc(100vw - 24px));
-        margin: 24px auto;
-        padding: 16px 18px;
-        border-radius: 22px;
-        background: rgba(255, 255, 255, 0.9);
-        box-shadow: 0 18px 48px rgba(142, 53, 103, 0.08);
-        text-align: center;
-        line-height: 1.8;
-      }
-
-      .hidden {
-        display: none;
       }
     </style>
   </head>
   <body>
     <header class="topbar">
-      <div class="title">Menu</div>
-      <a class="direct-link" href="/menu/menu.pdf" target="_blank" rel="noreferrer">
-        افتحي الـ PDF مباشرة
+      <div class="title">المنيو</div>
+      <a class="back-btn" href="/">
+        ← رجوع للرئيسية
       </a>
     </header>
 
-    <div id="status" class="status">جاري تحميل المنيو...</div>
-    <main id="viewer" class="viewer hidden"></main>
-
-    <script type="module">
-      import * as pdfjsLib from "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69/build/pdf.min.mjs";
-
-      pdfjsLib.GlobalWorkerOptions.workerSrc =
-        "https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69/build/pdf.worker.min.mjs";
-
-      const statusEl = document.getElementById("status");
-      const viewerEl = document.getElementById("viewer");
-
-      async function renderPdf() {
-        try {
-          const task = pdfjsLib.getDocument("/menu/menu.pdf");
-          const pdf = await task.promise;
-          const viewportWidth = Math.min(1100, window.innerWidth - 24);
-
-          for (let pageNumber = 1; pageNumber <= pdf.numPages; pageNumber += 1) {
-            const page = await pdf.getPage(pageNumber);
-            const baseViewport = page.getViewport({ scale: 1 });
-            const scale = viewportWidth / baseViewport.width;
-            const viewport = page.getViewport({ scale });
-            const outputScale = window.devicePixelRatio || 1;
-
-            const pageEl = document.createElement("section");
-            pageEl.className = "page";
-
-            const canvas = document.createElement("canvas");
-            const context = canvas.getContext("2d");
-
-            canvas.width = Math.floor(viewport.width * outputScale);
-            canvas.height = Math.floor(viewport.height * outputScale);
-            canvas.style.width = `${viewport.width}px`;
-            canvas.style.height = `${viewport.height}px`;
-
-            context.setTransform(outputScale, 0, 0, outputScale, 0, 0);
-
-            pageEl.appendChild(canvas);
-            viewerEl.appendChild(pageEl);
-
-            await page.render({
-              canvasContext: context,
-              viewport,
-            }).promise;
-          }
-
-          statusEl.classList.add("hidden");
-          viewerEl.classList.remove("hidden");
-        } catch (error) {
-          statusEl.innerHTML =
-            'تعذر عرض المنيو داخل الصفحة. <a href="/menu/menu.pdf" target="_blank" rel="noreferrer">افتحي الـ PDF من هنا</a>';
-          console.error(error);
-        }
-      }
-
-      renderPdf();
-    </script>
+    <main class="viewer">
+      <img src="menu.png" alt="Teka Menu" class="menu-image" />
+    </main>
   </body>
 </html>
