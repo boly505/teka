@@ -1,0 +1,100 @@
+- main [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - img [ref=e8]
+      - generic [ref=e11]: Teka
+    - button "English" [ref=e13] [cursor=pointer]:
+      - img
+      - text: English
+  - generic [ref=e14]:
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - img [ref=e18]
+        - generic [ref=e21]: محل حلويات أونلاين
+      - heading "Teka Desserts" [level=1] [ref=e22]
+      - paragraph [ref=e23]: حلويات فاخرة بتصاميم مبتكرة ونكهات لا تُنسى
+      - paragraph [ref=e24]: نقدم لكِ أشهى الحلويات المصنوعة بأجود المكونات وبأيدٍ مصرية. اطلبي الآن واستمتعي بطعم لا يُقاوم!
+      - generic [ref=e25]:
+        - link "المنيو شاهدي كل حلوياتنا" [ref=e26] [cursor=pointer]:
+          - /url: https://your-menu-link.pdf
+          - generic [ref=e28]:
+            - img [ref=e30]
+            - generic [ref=e33]:
+              - heading "المنيو" [level=3] [ref=e34]
+              - paragraph [ref=e35]: شاهدي كل حلوياتنا
+            - img [ref=e37]
+        - generic [ref=e42]:
+          - link "واتساب للطلب والاستفسار" [ref=e43] [cursor=pointer]:
+            - /url: https://wa.me/201001234567?text=مرحباً%20Teka%20Desserts
+            - generic [ref=e44]:
+              - img [ref=e46]
+              - generic [ref=e48]:
+                - heading "واتساب" [level=3] [ref=e49]
+                - paragraph [ref=e50]: للطلب والاستفسار
+              - img [ref=e52]
+          - link "اتصال اتصلي بنا مباشرة" [ref=e55] [cursor=pointer]:
+            - /url: tel:+201001234567
+            - generic [ref=e56]:
+              - img [ref=e58]
+              - generic [ref=e60]:
+                - heading "اتصال" [level=3] [ref=e61]
+                - paragraph [ref=e62]: اتصلي بنا مباشرة
+              - img [ref=e64]
+        - button "العب معنا! جمع النقاط واستمتع" [ref=e67] [cursor=pointer]:
+          - generic [ref=e69]:
+            - img [ref=e71]
+            - generic [ref=e73]:
+              - heading "العب معنا!" [level=3] [ref=e74]
+              - paragraph [ref=e75]: جمع النقاط واستمتع
+            - img [ref=e77]
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e86]: T
+        - img [ref=e88]
+        - img [ref=e92]
+        - img [ref=e96]
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - generic [ref=e113]: 1000+
+          - generic [ref=e114]: عميلة سعيدة
+        - generic [ref=e115]:
+          - generic [ref=e116]: 50+
+          - generic [ref=e117]: تصميم فريد
+        - generic [ref=e118]:
+          - generic [ref=e119]: 5★
+          - generic [ref=e120]: تقييم ممتاز
+  - generic [ref=e121]:
+    - generic [ref=e122]:
+      - heading "تابعينا على السوشيال ميديا" [level=2] [ref=e123]
+      - paragraph [ref=e124]: للتعرف على أحدث العروض والتصاميم
+    - generic [ref=e125]:
+      - link "Instagram @teka.desserts" [ref=e126] [cursor=pointer]:
+        - /url: https://instagram.com/teka.desserts
+        - generic [ref=e128]:
+          - img [ref=e131]
+          - generic [ref=e134]:
+            - heading "Instagram" [level=4] [ref=e135]
+            - paragraph [ref=e136]: "@teka.desserts"
+          - img [ref=e138]
+      - link "Facebook Teka Desserts" [ref=e140] [cursor=pointer]:
+        - /url: https://facebook.com/teka.desserts
+        - generic [ref=e142]:
+          - img [ref=e145]
+          - generic [ref=e147]:
+            - heading "Facebook" [level=4] [ref=e148]
+            - paragraph [ref=e149]: Teka Desserts
+          - img [ref=e151]
+      - link "TikTok @teka.desserts" [ref=e153] [cursor=pointer]:
+        - /url: https://tiktok.com/@teka.desserts
+        - generic [ref=e155]:
+          - img [ref=e158]
+          - generic [ref=e161]:
+            - heading "TikTok" [level=4] [ref=e162]
+            - paragraph [ref=e163]: "@teka.desserts"
+          - img [ref=e165]
+  - generic [ref=e168]:
+    - generic [ref=e169]: Made with
+    - img [ref=e171]
+    - generic [ref=e173]: by
+    - link "Mohamed Belal" [ref=e174] [cursor=pointer]:
+      - /url: https://wa.me/201234567890

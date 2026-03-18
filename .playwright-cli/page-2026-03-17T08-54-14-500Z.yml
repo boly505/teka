@@ -1,0 +1,39 @@
+- generic [ref=e201]:
+  - generic [ref=e202]:
+    - button "رجوع للرئيسية" [ref=e203] [cursor=pointer]:
+      - img
+      - text: رجوع للرئيسية
+    - generic [ref=e204]:
+      - img [ref=e205]
+      - generic [ref=e211]: "0"
+  - generic [ref=e212]:
+    - generic [ref=e213]:
+      - generic [ref=e214]:
+        - generic [ref=e215]: المستوى
+        - generic [ref=e216]: "1"
+      - generic [ref=e217]: x0
+    - generic [ref=e218]:
+      - img [ref=e219]
+      - img [ref=e221]
+      - img [ref=e223]
+    - generic [ref=e225]:
+      - generic [ref=e226]:
+        - generic [ref=e227]: أعلى نقاط
+        - generic [ref=e228]: "0"
+      - button "شاشة كاملة" [ref=e229] [cursor=pointer]:
+        - img
+        - text: شاشة كاملة
+  - generic [ref=e230]:
+    - generic "لعبة جمع الحلويات من Teka Desserts" [ref=e231]
+    - generic [ref=e246]:
+      - img [ref=e248]
+      - heading "انتهت الجولة" [level=2] [ref=e251]
+      - paragraph [ref=e252]: "نقاطك: 0 • أعلى نقاط: 0"
+      - generic [ref=e253]:
+        - button "العب مرة أخرى" [ref=e254] [cursor=pointer]
+        - button "رجوع للرئيسية" [ref=e255] [cursor=pointer]
+  - generic [ref=e241]:
+    - generic [ref=e242]:
+      - text: اضغطي على الحلويات قبل ما توصل لأسفل اللوحة.
+      - generic [ref=e243]: "اختصار سريع: اضغطي F لتبديل وضع الشاشة الكاملة."
+    - generic [ref=e244]: "اختصار سريع: اضغطي F لتبديل وضع الشاشة الكاملة."

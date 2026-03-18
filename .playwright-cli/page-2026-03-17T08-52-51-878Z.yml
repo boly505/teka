@@ -1,0 +1,110 @@
+- main [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - img "Teka Desserts logo" [ref=e12]
+        - img [ref=e14]
+        - img [ref=e20]
+        - img [ref=e26]
+        - img [ref=e31]
+      - generic [ref=e35]:
+        - generic [ref=e36]: Teka
+        - generic [ref=e37]: منيو وروابط سريعة في مكان واحد
+    - button "English" [ref=e38] [cursor=pointer]:
+      - img
+      - text: English
+  - generic [ref=e39]:
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - img [ref=e42]
+        - text: واجهة أنيقة للمناسبات والحلويات
+      - heading "Teka Desserts" [level=1] [ref=e45]
+      - paragraph [ref=e46]: حلا تيكا بطابع أنيق وسريع
+      - paragraph [ref=e47]: رابط واحد يوصّل الزوار للمنيو، واتساب، الاتصال، والسوشيال بدون أي لخبطة.
+      - paragraph [ref=e48]: الصفحة معمولة لتكون كارت رقمي خفيف وسريع. الزائر يدخل، يشوف هوية البراند، ويختار فورًا الطريقة المناسبة للتواصل أو متابعة جديد Teka Desserts.
+      - generic [ref=e49]:
+        - generic [ref=e50]:
+          - generic [ref=e52]:
+            - img [ref=e54]
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - heading "المنيو" [level=3] [ref=e59]
+                - generic [ref=e60]: أضيفيه لاحقًا
+              - paragraph [ref=e61]: المكان جاهز، أضيفي الرابط لاحقًا من الإعدادات.
+            - img [ref=e63]
+          - generic [ref=e66]: قريبًا
+        - button "لعبة تيكا لمسة ممتعة تخلي الزيارة أخف وألطف افتح" [ref=e67] [cursor=pointer]:
+          - generic [ref=e69]:
+            - img [ref=e71]
+            - generic [ref=e73]:
+              - heading "لعبة تيكا" [level=3] [ref=e75]
+              - paragraph [ref=e76]: لمسة ممتعة تخلي الزيارة أخف وألطف
+            - img [ref=e78]
+          - generic [ref=e81]: افتح
+        - link "واتساب أسرع طريقة للتواصل والاستفسار مباشر" [ref=e82] [cursor=pointer]:
+          - /url: https://wa.me/201001234567?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20Teka%20Desserts%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D9%86%D9%8A%D9%88.
+          - generic [ref=e84]:
+            - img [ref=e86]
+            - generic [ref=e88]:
+              - heading "واتساب" [level=3] [ref=e90]
+              - paragraph [ref=e91]: أسرع طريقة للتواصل والاستفسار
+            - img [ref=e93]
+          - generic [ref=e96]: مباشر
+        - link "اتصال للمكالمات المباشرة في ثانية مباشر" [ref=e97] [cursor=pointer]:
+          - /url: tel:+201001234567
+          - generic [ref=e99]:
+            - img [ref=e101]
+            - generic [ref=e103]:
+              - heading "اتصال" [level=3] [ref=e105]
+              - paragraph [ref=e106]: للمكالمات المباشرة في ثانية
+            - img [ref=e108]
+          - generic [ref=e111]: مباشر
+    - complementary [ref=e112]:
+      - generic [ref=e115]:
+        - generic [ref=e116]:
+          - img "Teka Desserts logo" [ref=e121]
+          - img [ref=e123]
+          - img [ref=e129]
+          - img [ref=e135]
+          - img [ref=e141]
+        - generic [ref=e146]:
+          - generic [ref=e147]: Teka Desserts
+          - paragraph [ref=e148]: يمكنك استبدال الشعار في أي وقت بسهولة.
+        - generic [ref=e149]:
+          - generic [ref=e150]: منيو جاهز للإضافة
+          - generic [ref=e151]: واتساب مباشر
+          - generic [ref=e152]: روابط سوشيال مرتبة
+      - generic [ref=e153]:
+        - generic [ref=e154]:
+          - heading "تابعينا على السوشيال" [level=2] [ref=e155]
+          - paragraph [ref=e156]: آخر العروض والتصميمات الجديدة في مكان واضح وسهل.
+        - generic [ref=e157]:
+          - link "Instagram @teka.desserts" [ref=e158] [cursor=pointer]:
+            - /url: https://instagram.com/teka.desserts
+            - generic [ref=e160]:
+              - img [ref=e162]
+              - generic [ref=e165]:
+                - generic [ref=e166]: Instagram
+                - generic [ref=e167]: "@teka.desserts"
+              - img [ref=e168]
+          - link "Facebook Teka Desserts" [ref=e170] [cursor=pointer]:
+            - /url: https://facebook.com/teka.desserts
+            - generic [ref=e172]:
+              - img [ref=e174]
+              - generic [ref=e176]:
+                - generic [ref=e177]: Facebook
+                - generic [ref=e178]: Teka Desserts
+              - img [ref=e179]
+          - link "TikTok @teka.desserts" [ref=e181] [cursor=pointer]:
+            - /url: https://tiktok.com/@teka.desserts
+            - generic [ref=e183]:
+              - img [ref=e185]
+              - generic [ref=e188]:
+                - generic [ref=e189]: TikTok
+                - generic [ref=e190]: "@teka.desserts"
+              - img [ref=e191]
+  - generic [ref=e193]:
+    - generic [ref=e194]:
+      - generic [ref=e195]: مصمم ليجمع المنيو وروابط التواصل في صفحة واحدة.
+      - img [ref=e196]
+    - generic [ref=e198]: 2026 Teka Desserts. جميع الحقوق محفوظة.

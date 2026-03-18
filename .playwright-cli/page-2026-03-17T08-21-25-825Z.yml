@@ -1,0 +1,27 @@
+- generic [ref=e194]:
+  - banner [ref=e195]:
+    - button "رجوع" [ref=e196] [cursor=pointer]:
+      - img
+      - text: رجوع
+    - generic [ref=e197]:
+      - img [ref=e198]
+      - generic [ref=e204]: "0"
+  - generic [ref=e205]:
+    - generic [ref=e206]:
+      - generic [ref=e207]: "المستوى:"
+      - generic [ref=e208]: "1"
+    - generic [ref=e209]:
+      - img [ref=e210]
+      - img [ref=e212]
+      - img [ref=e214]
+    - generic [ref=e216]:
+      - generic [ref=e217]: "كومبو:"
+      - generic [ref=e218]: x0
+  - generic [ref=e230]:
+    - heading "انتهت اللعبة!" [level=2] [ref=e231]
+    - paragraph [ref=e232]: "نقاطك: 0"
+    - paragraph [ref=e233]: "أعلى نقاط: 0"
+    - generic [ref=e234]:
+      - button "العب مرة أخرى" [ref=e235] [cursor=pointer]
+      - button "رجوع للرئيسية" [ref=e236] [cursor=pointer]
+  - generic [ref=e228]: انقر على الحلويات لجمع النقاط قبل ما توصل للأرض!

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Manrope:wght@400;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 1.5rem;
+  --background: #fff8fb;
+  --foreground: #18121c;
+  --card: #ffffff;
+  --card-foreground: #18121c;
+  --popover: #ffffff;
+  --popover-foreground: #18121c;
+  --primary: #18121c;
+  --primary-foreground: #ffffff;
+  --secondary: #fff0f7;
+  --secondary-foreground: #18121c;
+  --muted: #fff0f7;
+  --muted-foreground: #6a6070;
+  --accent: #fff1f8;
+  --accent-foreground: #18121c;
+  --destructive: #ef4444;
+  --border: #f4d9e7;
+  --input: #f4d9e7;
+  --ring: #f04f9a;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background: #fff7fb;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    margin: 0;
+  }
+
+  body,
+  button,
+  input,
+  textarea {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+  }
+
+  html[dir="rtl"] body,
+  html[dir="rtl"] button,
+  html[dir="rtl"] input,
+  html[dir="rtl"] textarea {
+    font-family: "Almarai", "Tahoma", sans-serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  background:
+    radial-gradient(circle at top, rgba(255, 208, 230, 0.85) 0%, rgba(255, 208, 230, 0) 36%),
+    linear-gradient(145deg, #fff8fb 0%, #fff2f8 36%, #fef7ff 100%);
+}
+
+.grain-overlay {
+  opacity: 0.24;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.42) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.42) 1px, transparent 1px);
+  background-size: 24px 24px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.42), transparent 85%);
+}
+
+.glass-panel {
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 20px 55px rgba(240, 79, 154, 0.1);
+  backdrop-filter: blur(18px);
+}
+
+.hero-text-gradient {
+  background: linear-gradient(135deg, #ff4c9f 0%, #cc48ff 48%, #ff7ab7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bidi-copy {
+  unicode-bidi: plaintext;
+}
+
+.latin-inline {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.numeric-inline {
+  direction: ltr;
+  unicode-bidi: isolate;
+  display: inline-block;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  font-variant-numeric: tabular-nums;
+}
+
+.canvas-shell {
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.82), transparent 35%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.78), rgba(255, 243, 250, 0.66));
+}
+
+.game-canvas {
+  width: 100%;
+  max-width: 760px;
+  cursor: crosshair;
+}
+
+::selection {
+  background: #f04f9a;
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff0f7;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ff5ea8, #a241ff);
+}
